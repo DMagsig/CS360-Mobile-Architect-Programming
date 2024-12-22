@@ -1,12 +1,19 @@
 # CS360-Mobile-Architect-Programming
 # Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
+The application I developed was a weight tracking app.  Its purpose was to provide a simple but efficient way of tracking their daily weight to meet their fitness goals.  The app required a database that stored user login information(username and password), store user's goal weight along with daily weight entries, and SMS notification settings for when the user's goal weight was reached.
 
 # What screens and features were necessary to support user needs and produce a user-centered UI for the app? How did your UI designs keep users in mind? Why were your designs successful?
+Three screen were necessary to support the users needs and be user-centered.  The first screen contained a text box for username and password and a login button for returning users. Also there was a new account button that opened text boxes for a new user to enter their phone number and goal weight.  Once logged in the user was taken to the main screen which had a personalised welcome message, current and goal weight information, a grid with weight information that can be deleted with a button, a text entry box for daily weight to be logged with a submit button, and a button to access the settings screen.  The last screen is the settings screen which has an SMS notification switch that allows the user to chose if they would like to be notified when their goal weight is reach, a save button to save any changes, a back button that would bring the user back to the main screen, and a logout button that would bring the user to the login screen. The design keep the user in mind by making sure that the user would be able to move through the app's different screens smoothly.  Making sure the buttons took the user to the correct screen helped make my design successful.
 
-# How did you approach the process of coding your app? What techniques or strategies did you use? How could those techniques or strategies be applied in the future?
+# How did you approach the process of coding your app? What techniques or strategies did you use? How could those techniques or strategies be applied in the future? 
+When coding my app I kept in mind what information is used and what actions need to happen on each screen and used modularized coding techniques.  The most important java file was the DataBaseHelper.java file. This dictates what and how the information from the user is stored, accessed, and modified.  From there it each screen was coded according to what actions were needed to be peformed with that user data. Modularized coding is useful due to its better readability and maintainabilty.  It is also easier to test during development without relying on the project to be completed first. 
+
 
 # How did you test to ensure your code was functional? Why is this process important, and what did it reveal?
+We used Andriod studio for this project.  I found the emulator to be very useful in ensuring that my code was functional.  This helped me make sure that the user would be able to move between each screen correctly and easily.  It also helped me identify when the data was not being accessed and display properly. This also gave insight to what a user might experience with using the app.
 
 # Consider the full app design and development process from initial planning to finalization. Where did you have to innovate to overcome a challenge?
+One challenge that I had to over come was when a new account was created the user's initial weight was not being stored into the weight log.  I had to make sure that not only was the new user's information was being entered into the user table, but also being entered into the weight log table.
 
 # In what specific component of your mobile app were you particularly successful in demonstrating your knowledge, skills, and experience?
+I feel that I was particularly successful in demonstrationg my knowlege, skills, and experience with the DataBaseHelper file. By ensuring that the collected data is able to be stored, accessed, and modified correctly.
